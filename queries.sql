@@ -4,16 +4,16 @@ CREATE TABLE transactions_clean AS
 SELECT *
 FROM transactions_raw;
 
---Trimming whitespace
+--Trimming whitespace and convert empty/blank values to 'Unknown'
 UPDATE transactions_clean
 SET
-retailer = TRIM(retailer),
-store_location = TRIM(store_location),
-department = TRIM(department),
-project_type = TRIM(project_type),
-sku = TRIM(sku),
-brand = TRIM(brand),
-pro_program = TRIM(pro_program);
+    retailer       = COALESCE(NULLIF(TRIM(retailer), ''), 'Unknown'),
+    store_location = COALESCE(NULLIF(TRIM(store_location), ''), 'Unknown'),
+    department     = COALESCE(NULLIF(TRIM(department), ''), 'Unknown'),
+    project_type   = COALESCE(NULLIF(TRIM(project_type), ''), 'Unknown'),
+    sku            = COALESCE(NULLIF(TRIM(sku), ''), 'Unknown'),
+    brand          = COALESCE(NULLIF(TRIM(brand), ''), 'Unknown'),
+    pro_program    = COALESCE(NULLIF(TRIM(pro_program), ''), 'Unknown');
 
 --Get rid of missing values from brand
 DELETE FROM transactions_final
