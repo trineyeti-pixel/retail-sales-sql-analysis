@@ -48,7 +48,7 @@ The final dataset used for the analysis included:
 ## Key Insights
 - Samsung is the clear top-revenue driver, significantly outperforming the other brands in the dataset. This may suggest that their products deserve priority in     inventory planning, promotions and forecasting.
 - Doors & Windows is the highest traffic department, with more transactions than any other department, suggesting high customer demands for those products.
-- Customers are saving a lot of money per transaction. With an average discount of 6.6 percent and average savings being 1096 dollars, it is safe to assume that     the average transaction value is very high.
+- Customers are saving a lot of money per transaction. With an average discount of 6.66 percent and average savings being 1096 dollars, it is safe to assume that     the average transaction value is very high.
 
 ---
 ## Final Dashboard Visualization
