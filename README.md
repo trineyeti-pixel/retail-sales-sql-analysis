@@ -1,4 +1,4 @@
-# big-box-store-sales-sql-project
+# retail-sales-sql-analysis
 
 ## Project Overview 
 This project analyzes transaction data regarding sales using SQL in SQLiteStudio. The goal was to clean raw sales data, standardize formatting, and extract business insights related to revenue performance, department categories, and discount impacts.
